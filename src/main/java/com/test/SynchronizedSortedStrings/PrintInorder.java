@@ -19,7 +19,7 @@ public class PrintInorder {
 
             futures.forEach(stringFuture -> {
                 try {
-                    System.out.println(stringFuture.get());
+                    stringFuture.get();
                 } catch (InterruptedException | ExecutionException e) {
                     throw new RuntimeException(e);
                 }

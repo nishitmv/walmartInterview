@@ -13,7 +13,9 @@ private int num;
     @Override
     public String call() {
         Thread.currentThread().setName("Thread "+num);
-        return num+" Thread "+num;
+         String s =  num+" Thread "+num;
+        System.out.println(s);
+        return s;
     }
 
 
